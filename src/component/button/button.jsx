@@ -5,7 +5,7 @@ const Button = (props) => {
     const {children} = props;
     return (
         <>
-          <button class="btn btn-success">{children}</button>
+          <button className="btn btn-success">{children}</button>
   
         </>
     );
