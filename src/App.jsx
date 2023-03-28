@@ -1,11 +1,12 @@
 import React from 'react';
+import Header from './component/Header/Header';
 import Button from './component/Button/Button';
 
 
 const App = () => {
   return (
     <>
-     <header />
+     <Header></Header>
      <Button>Sort by Date</Button>
      <Button>See More</Button>
     </>
