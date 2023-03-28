@@ -1,10 +1,15 @@
 import React from 'react';
+import Button from './component/Button/Button';
+
 
 const App = () => {
   return (
-    <div>
-     
-    </div>
+    <>
+     <header />
+     <Button>Sort by Date</Button>
+     <Button>See More</Button>
+    </>
+
   );
 };
 

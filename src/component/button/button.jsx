@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { Children } from 'react';
 
-const button = () => {
+const Button = (props) => {
+    console.log(props);
+    const {children} = props;
     return (
-        <div>
-            
-        </div>
+        <>
+          <button class="btn btn-success">{children}</button>
+  
+        </>
     );
 };
 
-export default button;
+export default Button;
