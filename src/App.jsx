@@ -3,8 +3,7 @@ import React from 'react';
 const App = () => {
   return (
     <div>
-      <button className="btn btn-primary">Button</button>
-<button className="btn btn-secondary">Button</button>
+      <h1 className='text-center font-bold text-3xl my-4 '>AI Universe Hub</h1>
     </div>
   );
 };
