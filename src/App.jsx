@@ -6,9 +6,10 @@ import Button from './component/Button/Button';
 const App = () => {
   return (
     <>
-     <Header></Header>
+    
+    <Header></Header>
      <Button>Sort by Date</Button>
-     <Button>See More</Button>
+     
     </>
 
   );
