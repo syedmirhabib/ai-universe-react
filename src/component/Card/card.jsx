@@ -1,11 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const card = () => {
-    const []
+    const [data, setData] = useState([]);
+
+    
+    useEffect(()=> {
+        const loadData = async() => {
+            const res = await fetch(
+                `https://openapi.programming-hero.com/api/ai/tools`
+                );
+            const data = await res.json();
+            console.log(data.data.tools)
+        };
+
+        loadData();
+    },[]);
+
+
     return (
-        <div>
-            <h1>Hello Card Bhai</h1>
-        </div>
+        <>
+          data.map((singleData) => {
+            console.log(singleData)
+            return <SingleData/>
+
+          })  
+        </>
     );
 };
 
