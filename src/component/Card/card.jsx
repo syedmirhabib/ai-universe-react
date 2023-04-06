@@ -9,8 +9,10 @@ const card = () => {
             const res = await fetch(
                 `https://openapi.programming-hero.com/api/ai/tools`
                 );
-            const data = await res.json();
-            console.log(data.data.tools)
+            const value = await res.json();
+            console.log(value.data.tools)
+            setData(value.data.tools)
+
         };
 
         loadData();
@@ -19,11 +21,11 @@ const card = () => {
 
     return (
         <>
-          data.map((singleData) => {
-            console.log(singleData)
-            return <SingleData/>
+          {data.map((singleData) => {
+            console.log(singleData);
+            return <SingleData/>;
 
-          })  
+          })}
         </>
     );
 };
